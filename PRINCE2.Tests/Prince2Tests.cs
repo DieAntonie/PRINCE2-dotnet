@@ -14,5 +14,18 @@ namespace PRINCE2.Tests
 
             // Assert
         }
+
+        [Fact]
+        public void NewProject_ReturnsEmptyPrince2Project()
+        {
+            // Arrange
+            var fakePRINCE2 = new Prince2();
+
+            // Act
+            Prince2Project mockProject = fakePRINCE2.NewProject();
+
+            // Assert
+            Assert.NotNull(mockProject);
+        }
     }
 }
