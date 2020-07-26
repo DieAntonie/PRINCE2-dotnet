@@ -6,6 +6,7 @@ namespace PRINCE2
     public class Prince2Project
     {
         ProjectBrief projectBrief;
+        LessonsLog lessonsLog;
         public AppointedExecutivesAndProjectManager AppointExecutivesAndProjectManager(ProjectMandate projectMandate)
         {
             projectBrief = new ProjectBrief()
@@ -28,6 +29,16 @@ namespace PRINCE2
         public ProjectBrief ProjectBrief()
         {
             return projectBrief;
+        }
+
+        public void CapturePreviousLessons(LessonsReport lessonsReport)
+        {
+            lessonsLog = new LessonsLog();
+        }
+
+        public LessonsLog LessonsLog()
+        {
+            return lessonsLog;
         }
     }
 

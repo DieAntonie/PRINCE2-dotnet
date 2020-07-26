@@ -42,10 +42,11 @@ namespace PRINCE2.Tests
             var fakePrince2Project = new Prince2Project();
 
             // Act
-            AppointedExecutivesAndProjectManager appointedExecutivesAndProjectManager = fakePrince2Project.AppointExecutivesAndProjectManager(new ProjectMandate());
+            fakePrince2Project.AppointExecutivesAndProjectManager(new ProjectMandate());
 
             // Assert
-            Assert.NotNull(fakePrince2Project.DailyLog());
+            DailyLog dailyLog = fakePrince2Project.DailyLog();
+            Assert.NotNull(dailyLog);
         }
 
         [Fact]
@@ -60,12 +61,26 @@ namespace PRINCE2.Tests
             };
 
             // Act
-            AppointedExecutivesAndProjectManager appointedExecutivesAndProjectManager = fakePrince2Project.AppointExecutivesAndProjectManager(mockProjectMandate);
+            fakePrince2Project.AppointExecutivesAndProjectManager(mockProjectMandate);
 
             // Assert
             ProjectBrief projectBrief = fakePrince2Project.ProjectBrief();
             Assert.NotNull(projectBrief.ExecutiveRoleDescription);
             Assert.NotNull(projectBrief.ProjectManagerRoleDescription);
+        }
+
+        [Fact]
+        public void CapturePreviousLessons_WithPreviousLessonsReport_CreatesLessonsLog()
+        {
+            // Arrange
+            var fakePrince2Project = new Prince2Project();
+
+            // Act
+            fakePrince2Project.CapturePreviousLessons(new LessonsReport());
+
+            // Assert
+            LessonsLog lessonLog = fakePrince2Project.LessonsLog();
+            Assert.NotNull(lessonLog);
         }
     }
 }
