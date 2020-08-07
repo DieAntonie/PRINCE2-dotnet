@@ -82,5 +82,22 @@ namespace PRINCE2.Tests
             LessonsLog lessonLog = fakePrince2Project.LessonsLog();
             Assert.NotNull(lessonLog);
         }
+        
+        // [Fact]
+        // public void DesignAndAppointProjectTeam_WithExecutiveProjectManagerRoleDescriptionsAndLessonsLog_ReturnsAppointedProjectManagementTeam()
+        // {
+        //     // Arrange
+        //     var fakePrince2Project = new Prince2Project();
+        //     var mockProjectBrief = new ProjectBrief()
+        //     {
+        //         ExecutiveRoleDescription = new Random().Next().ToString(),
+        //         ProjectManagerRoleDescription = new Random().Next().ToString()
+        //     };
+
+        //     // Act
+        //     AppointedProjectManagementTeam appointedProjectManagementTeam = fakePrince2Project.DesignAndAppointProjectTeam(mockProjectBrief, new LessonsLog());
+
+        //     // Assert
+        // }
     }
 }

@@ -40,6 +40,15 @@ namespace PRINCE2
         {
             return lessonsLog;
         }
+
+        public AppointedProjectManagementTeam DesignAndAppointProjectTeam(ProjectBrief mockProjectBrief, LessonsLog lessonsLog)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class AppointedProjectManagementTeam
+    {
     }
 
     public class AppointedExecutivesAndProjectManager
