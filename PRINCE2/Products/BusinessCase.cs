@@ -1,4 +1,5 @@
 using System;
+using PRINCE2.Roles;
 
 namespace PRINCE2.Products
 {
@@ -83,6 +84,21 @@ namespace PRINCE2.Products
              * Gives a summary of the key risks associated with the project, together with the likely impact and plans should they occur.
              */
             public MajorRisks majorRisks { get; set; }
+
+        #endregion
+
+        #region Derivation
+            public BusinessCase() { }
+
+            public BusinessCase(
+                ProjectMandate projectMandate,
+                ProjectBrief projectBrief,
+                ProjectPlan projectPlan,
+                SeniorUser[] seniorUsers,
+                Executive executive,
+                RiskRegister riskRegister,
+                IssueRegister issueRegister
+            ) => throw new NotImplementedException();
 
         #endregion
 
