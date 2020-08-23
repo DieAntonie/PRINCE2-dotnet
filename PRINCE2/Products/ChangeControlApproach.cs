@@ -5,6 +5,7 @@ using static PRINCE2.Products.ProjectProductDescription;
 namespace PRINCE2.Products
 {
     /**
+     * Purpose:
      * A change control approach is used to identify, assess and control any potential and approved changes to the project baselines.
      * It describes the procedures, techniques and standards to be applied and the responsibilities for achieving an effective issue management and change control procedure.
      */
