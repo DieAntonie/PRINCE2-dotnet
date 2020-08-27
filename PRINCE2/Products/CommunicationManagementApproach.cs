@@ -4,42 +4,44 @@ namespace PRINCE2.Products
 {
 
     /**
-* A communication management approach contains a description of the means and frequency of communication with parties both internal and external to the project.
-* It facilitates engagement with stakeholders through the establishment of a controlled and bidirectional flow of information.
-*/
+     * A communication management approach contains a description of the means and frequency of communication with parties both internal and external to the project.
+     * It facilitates engagement with stakeholders through the establishment of a controlled and bidirectional flow of information.
+     */
     public class CommunicationManagementApproach : Approach
     {
 
         #region Composition
 
             /**
-            * Describes (or refers to) any communication methods to be used.
-            * Any variance from corporate, programme management or customer standards should be highlighted, together with a justification for the variance.
-            */
+             * Describes (or refers to) any communication methods to be used.
+             * Any variance from corporate, programme management or customer standards should be highlighted, together with a justification for the variance.
+             */
             public CommunicationProcedure communicationProcedure { get; set; }
 
-            // States when formal communication activities are to be undertaken (e.g. at the end of a management stage), including performance audits of the communication methods.
+            /**
+             * States when formal communication activities are to be undertaken (e.g. at the end of a management stage), including performance audits of the communication methods.
+             */
             public CommunicationActivitiesTiming communicationActivitiesTiming { get; set; }
 
             /**
-            * Consists of:
-            *  - Identification of the interested party (which may include accounts staff, user forum, internal audit, corporate, programme management or customer quality assurance, competitors, etc.)
-            *  - Current relationship
-            *  - Desired relationship
-            *  - Interfaces
-            *  - Key messages
-            */
+             * Consists of:
+             *  - Identification of the interested party (which may include accounts staff, user forum, internal audit, corporate, programme management or customer quality assurance, competitors, etc.)
+             *  - Current relationship
+             *  - Desired relationship
+             *  - Interfaces
+             *  - Key messages
+             */
             public StakeholderAnalysis stakeholderAnalysis { get; set; }
 
             /**
-            * Consists of:
-            *  - Information required to be provided from the project
-            *  - Information required to be provided to the project
-            *  - Information provider and recipient
-            *  - Frequency of communication
-            *  - Means of communication
-            *  - Format of the communication
-            */
+             * Consists of:
+             *  - Information required to be provided from the project
+             *  - Information required to be provided to the project
+             *  - Information provider and recipient
+             *  - Frequency of communication
+             *  - Means of communication
+             *  - Format of the communication
+             */
             public InformationNeedsForInterestedParty informationNeedsForInterestedParty { get; set; }
 
         #endregion
