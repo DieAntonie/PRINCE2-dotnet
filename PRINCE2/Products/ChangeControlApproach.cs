@@ -9,14 +9,10 @@ namespace PRINCE2.Products
      * A change control approach is used to identify, assess and control any potential and approved changes to the project baselines.
      * It describes the procedures, techniques and standards to be applied and the responsibilities for achieving an effective issue management and change control procedure.
      */
-    public class ChangeControlApproach
+    public class ChangeControlApproach : Approach
     {
 
         #region Composition
-            /**
-             * States the purpose, objectives and scope, and identifies who is responsible for the approach.
-             */
-            public Introduction introduction { get; set; }
 
             /**
              * Describes (or refers to) the issue management and change control procedure to be used.
@@ -26,31 +22,9 @@ namespace PRINCE2.Products
             public IssueManagementChangeControlProcedure issueManagementChangeControlProcedure { get; set; }
 
             /**
-             * Refers to any systems or tools to be used and any preference for techniques that may be used for each step in the issue management and change control procedure.
-             */
-            public ToolsTechniques toolsTechniques { get; set; }
-
-            /**
-             * Defines the composition and format of the issue register.
-             */
-            public Records records { get; set; }
-
-            /**
-             * Describes the composition and format of the reports that are to be produced, their purpose, timing and chosen recipients.
-             * This should include reviewing the performance of the procedures.
-             */
-            public Reporting reporting { get; set; }
-
-            /**
-             * States when formal activities (e.g. reviews or audits) are to be undertaken.
-             */
+            * States when formal activities (e.g. reviews or audits) are to be undertaken.
+            */
             public IssueManagementChangeControlIssueActivitiesTiming issueManagementChangeControlIssueActivitiesTiming { get; set; }
-
-            /**
-             * Describes who will be responsible for what aspects of the procedures, including any corporate, programme management or customer roles involved with the change control of the project’s products.
-             * Describes whether a change authority and/or change budget will be established.
-             */
-            public RolesResponsibilities rolesResponsibilities { get; set; }
 
             /**
              * Describes the scales for prioritizing requests for change and off-specifications and for determining the level of management that can make decisions on the severity of an issue.
@@ -115,19 +89,9 @@ namespace PRINCE2.Products
 
         #endregion
 
-        public class Introduction { }
-
         public class IssueManagementChangeControlProcedure { }
 
-        public class ToolsTechniques { }
-
-        public class Records { }
-
-        public class Reporting { }
-
-        public class IssueManagementChangeControlIssueActivitiesTiming { }
-
-        public class RolesResponsibilities { }
+        public class IssueManagementChangeControlIssueActivitiesTiming: ActivitiesTiming { }
 
         public class PrioritySeverityScales { }
 
