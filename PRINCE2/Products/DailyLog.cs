@@ -1,6 +1,14 @@
 namespace PRINCE2.Products
 {
-    public class DailyLog
-    {
-    }
+    /**
+     * Purpose:
+     * A daily log may be used to record informal issues, required actions or significant events not captured by other PRINCE2 registers or logs.
+     * It can act as the project diary for the project manager.
+     * It can also be used as a repository for issues and risks during the "starting up a project" process if the other registers have not been set up.
+     * There may be more than one daily log as team managers may elect to have one for their work packages, separate from the project manager’s daily log.
+     * Entries are made when the project manager or team manager feels it is appropriate to log some event.
+     * Often entries are based on thoughts, conversations and observations.
+     * PRINCE2 does not define the composition, format and presentation or quality criteria for this product.
+     */
+    public class DailyLog { }
 }
