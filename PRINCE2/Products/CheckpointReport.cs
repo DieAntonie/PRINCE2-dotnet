@@ -7,7 +7,7 @@ namespace PRINCE2.Products
      * Purpose:
      * A checkpoint report is used to report, at a frequency defined in the work package, the status of the work package.
      */
-    public class CheckpointReport
+    public partial class CheckpointReport
     {
 
         #region Composition
@@ -62,7 +62,7 @@ namespace PRINCE2.Products
                 WorkPackage workPackage,
                 TeamPlanActual teamPlanActual,
                 CheckpointReport previousCheckpointReport
-            ) { }
+            ) => throw new NotImplementedException();
 
         #endregion
 
@@ -100,8 +100,6 @@ namespace PRINCE2.Products
         public class FollowUps { }
 
         public class WorkPackageToleranceStatus { }
-
-        public class IssuesRisks { }
 
         public class TeamPlanActual { }
     }
