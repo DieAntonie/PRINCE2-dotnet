@@ -1,8 +1,9 @@
 using System;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
-    public abstract class EndReport
+    public abstract partial class EndReport
     {
         #region Composition
 
@@ -97,8 +98,6 @@ namespace PRINCE2.Products
         public class TeamPerformanceReview { }
 
         public class ProductsReview { }
-
-        public class Lessons { }
 
     }
 

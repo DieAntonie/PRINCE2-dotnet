@@ -35,16 +35,16 @@ namespace PRINCE2.Products
             public EndStageReport() { }
 
             public EndStageReport(
-                StagePlan stagePlan, // current management stage plan and actuals
-                ProjectPlan projectPlan, // project plan
-                BenefitsManagementApproach benefitsManagementApproach, // benefits management approach
+                StagePlan stagePlan,
+                ProjectPlan projectPlan,
+                BenefitsManagementApproach benefitsManagementApproach,
                 IssueRegister issueRegister,
                 QualityRegister qualityRegister,
-                RiskRegister riskRegister, // risk register, quality register and issue register
-                ExceptionReport exceptionReport, // exception report (if applicable)
-                LessonsLog lessonsLog, // lessons log
-                WorkPackage[] workPackages, // completed/slipped work packages
-                BusinessCase businessCase// updated business case.
+                RiskRegister riskRegister,
+                ExceptionReport exceptionReport,
+                LessonsLog lessonsLog,
+                WorkPackage[] workPackages,
+                BusinessCase businessCase
             ) => throw new NotImplementedException();
 
         #endregion
