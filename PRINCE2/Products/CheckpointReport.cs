@@ -95,8 +95,6 @@ namespace PRINCE2.Products
 
         #endregion
 
-        public class Period { }
-
         public class FollowUps { }
 
         public class WorkPackageToleranceStatus { }
