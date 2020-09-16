@@ -11,8 +11,11 @@ namespace PRINCE2
         {
             projectBrief = new ProjectBrief()
             {
-                ExecutiveRoleDescription = projectMandate.Executive,
-                ProjectManagerRoleDescription = projectMandate.ProjectManager
+                roleDescriptions = new ProjectBrief.RoleDescriptions()
+                {
+                    ExecutiveRoleDescription = projectMandate.Executive,
+                    ProjectManagerRoleDescription = projectMandate.ProjectManager
+                }
             };
             return new AppointedExecutivesAndProjectManager()
             {

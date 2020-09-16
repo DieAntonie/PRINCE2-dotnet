@@ -65,8 +65,8 @@ namespace PRINCE2.Tests
 
             // Assert
             ProjectBrief projectBrief = fakePrince2Project.ProjectBrief();
-            Assert.NotNull(projectBrief.ExecutiveRoleDescription);
-            Assert.NotNull(projectBrief.ProjectManagerRoleDescription);
+            Assert.NotNull(projectBrief.roleDescriptions.ExecutiveRoleDescription);
+            Assert.NotNull(projectBrief.roleDescriptions.ProjectManagerRoleDescription);
         }
 
         [Fact]
