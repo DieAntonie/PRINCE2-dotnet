@@ -114,15 +114,6 @@ namespace PRINCE2.Products
 
         #endregion
 
-        public class ProjectDefinition { }
-
-        public class ProjectApproach { }
-
-        public class RoleDescriptions {
-            public string ExecutiveRoleDescription { get; set; }
-            public string ProjectManagerRoleDescription { get; set; }
-        }
-
         public class References { }
 
         public class ProgrammeManagement { }

@@ -3,7 +3,7 @@ using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
-    public abstract partial class EndReport
+    public abstract class EndReport
     {
         #region Composition
 

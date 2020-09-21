@@ -1,5 +1,6 @@
 using System;
 using PRINCE2.Products;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2
 {
@@ -11,7 +12,7 @@ namespace PRINCE2
         {
             projectBrief = new ProjectBrief()
             {
-                roleDescriptions = new ProjectBrief.RoleDescriptions()
+                roleDescriptions = new RoleDescriptions()
                 {
                     ExecutiveRoleDescription = projectMandate.Executive,
                     ProjectManagerRoleDescription = projectMandate.ProjectManager
