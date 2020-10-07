@@ -162,12 +162,6 @@ namespace PRINCE2.Products
 
         public class Identifier { }
 
-        public class Title { }
-
-        public class Purpose { }
-
-        public class Composition { }
-
         public class Derivation { }
 
         public class FormatPresentation { }
@@ -175,8 +169,6 @@ namespace PRINCE2.Products
         public class DevelopmentSkillsRequired { }
 
         public class QualityCriteria { }
-
-        public class QualityTolerance { }
 
         public class QualityMethod { }
 

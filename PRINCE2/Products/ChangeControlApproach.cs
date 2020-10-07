@@ -1,6 +1,5 @@
 using System;
 using PRINCE2.UNSORTED;
-using static PRINCE2.Products.ProjectProductDescription;
 
 namespace PRINCE2.Products
 {
