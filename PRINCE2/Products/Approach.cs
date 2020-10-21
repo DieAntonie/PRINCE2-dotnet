@@ -16,6 +16,9 @@ namespace PRINCE2.Products
              *
              * CommunicationManagementApproach:
              * Refers to any communication tools to be used, and any preference for techniques that may be used, for each step in the communication process.
+             *
+             * QualityManagementApproach:
+             * Refers to any quality management systems or tools to be used, and any preference for techniques which may be used for each step in the quality management procedure.
              */
             public ToolsTechniques toolsTechniques { get; set; }
 
@@ -25,6 +28,9 @@ namespace PRINCE2.Products
              *
              * CommunicationManagementApproach:
              * Defines what communication records will be required and where they will be stored (e.g. logging of external correspondence).
+             *
+             * QualityManagementApproach:
+             * Definition of what quality records will be required and where they will be stored, including the composition and format of the quality register.
              */
             public Records records { get; set; }
 
@@ -35,6 +41,9 @@ namespace PRINCE2.Products
              *
              * CommunicationManagementApproach:
              * Describes any reports on the communication process that are to be produced, including their purpose, timing and recipients (e.g. performance indicators).
+             *
+             * QualityManagementApproach:
+             * Describes any quality management reports, including their purpose, timing and recipients.
              */
             public Reporting reporting { get; set; }
 
@@ -44,6 +53,9 @@ namespace PRINCE2.Products
              *
              * CommunicationManagementApproach:
              * States when formal communication activities are to be undertaken (e.g. at the end of a management stage), including performance audits of the communication methods.
+             *
+             * QualityManagementApproach:
+             * States when formal quality management activities are to be undertaken (e.g. during audits, when this may involve reference to the quality register).
              */
             public ActivitiesTiming activitiesTiming { get; set; }
 
@@ -54,6 +66,9 @@ namespace PRINCE2.Products
              *
              * CommunicationManagementApproach:
              * Describes who will be responsible for what aspects of the communication process, including any corporate, programme management or customer roles involved with communication.
+             *
+             * QualityManagementApproach:
+             * Defines the roles and responsibilities for quality management activities, including those with quality responsibilities from corporate, programme management or the customer.
              */
             public RolesResponsibilities rolesResponsibilities { get; set; }
 

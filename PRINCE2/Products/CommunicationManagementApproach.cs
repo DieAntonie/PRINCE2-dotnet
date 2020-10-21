@@ -51,12 +51,12 @@ namespace PRINCE2.Products
             public CommunicationManagementApproach() { }
 
             public CommunicationManagementApproach(
-                CorporatecommunicationsPolicies corporatecommunicationsPolicies,
+                CorporateCommunicationsPolicies corporateCommunicationsPolicies,
                 InformationManagementStrategy informationManagementStrategy,
                 ProjectInitiationDocumentation projectInitiationDocumentation,
                 StakeholderFacilitatedWorkshopsInformalDiscussions stakeholderFacilitatedWorkshopsInformalDiscussions,
                 StakeholderAnalysis stakeholderAnalysis
-            ) { }
+            ) => throw new NotImplementedException();
 
         #endregion
 
@@ -107,7 +107,7 @@ namespace PRINCE2.Products
 
         public class InformationNeedsForInterestedParty { }
 
-        public class CorporatecommunicationsPolicies { }
+        public class CorporateCommunicationsPolicies { }
 
         public class InformationManagementStrategy { }
 
