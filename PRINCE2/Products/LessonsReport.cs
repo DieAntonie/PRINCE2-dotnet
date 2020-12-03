@@ -1,4 +1,5 @@
 using System;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
@@ -38,7 +39,5 @@ namespace PRINCE2.Products
             ) => throw new NotImplementedException();
 
         #endregion
-
-        public class QualityRecords { }
     }
 }

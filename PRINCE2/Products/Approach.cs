@@ -1,3 +1,5 @@
+using PRINCE2.UNSORTED;
+
 namespace PRINCE2.Products
 
 {
@@ -81,8 +83,6 @@ namespace PRINCE2.Products
         public class Records { }
 
         public class Reporting { }
-
-        public class RolesResponsibilities { }
 
         public class ActivitiesTiming { }
     }
