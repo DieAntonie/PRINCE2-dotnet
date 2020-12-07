@@ -3,7 +3,7 @@ using Xunit;
 
 namespace PRINCE2.Products.Tests
 {
-    public class ProjectProductDescriptionTests
+    public class RiskManagementApproachTests
     {
         [Fact]
         public void Test1()
@@ -16,16 +16,16 @@ namespace PRINCE2.Products.Tests
         }
 
         [Fact]
-        public void ProjectProductDescription_CanBeCreated()
+        public void RiskManagementApproach_CanBeCreated()
         {
             //Given
-            ProjectProductDescription projectProductDescription;
+            RiskManagementApproach riskManagementApproach;
 
             //When
-            projectProductDescription = new ProjectProductDescription();
+            riskManagementApproach = new RiskManagementApproach();
 
             //Then
-            Assert.NotNull(projectProductDescription);
+            Assert.NotNull(riskManagementApproach);
         }
     }
 }

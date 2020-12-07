@@ -16,7 +16,7 @@ namespace PRINCE2.Products.Tests
         }
 
         [Fact]
-        public void ProjectBrief_CanBeCreated()
+        public void ProjectInitiationDocumentation_CanBeCreated()
         {
             //Given
             ProjectInitiationDocumentation projectInitiationDocumentation;
