@@ -4,7 +4,7 @@ using static PRINCE2.Products.Approach;
 
 namespace PRINCE2.Products
 {
-    public class RiskManagementApproach
+    public partial class RiskManagementApproach
     {
 
         #region Composition
@@ -141,11 +141,7 @@ namespace PRINCE2.Products
 
         public class Scales { }
 
-        public class Proximity { }
-
         public class RiskCategories { }
-
-        public class RiskResponseCategories { }
 
         public class EarlyWarningIndicators { }
 
