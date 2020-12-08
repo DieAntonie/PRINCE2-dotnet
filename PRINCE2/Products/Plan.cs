@@ -1,4 +1,5 @@
 using System;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
@@ -21,7 +22,7 @@ namespace PRINCE2.Products
      *
      * A plan should cover not just the activities to create products but also the activities to manage product creation, including activities for assurance, quality management, risk management, change control, communication and any other project controls required.
      */
-    public class Plan
+    public partial class Plan
     {
         
         #region Composition
@@ -176,8 +177,6 @@ namespace PRINCE2.Products
         public class MonitoringControl { }
 
         public class Budgets { }
-
-        public class Tolerances { }
 
         public class Schedule { }
 

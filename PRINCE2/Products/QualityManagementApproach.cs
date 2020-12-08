@@ -8,7 +8,7 @@ namespace PRINCE2.Products
      * A quality management approach describes how quality will be managed on the project.
      * This includes the specific processes, procedures, techniques, standards and responsibilities to be applied.
      */
-    public class QualityManagementApproach : Approach
+    public partial class QualityManagementApproach : Approach
     {
         #region Composition
 
@@ -96,8 +96,6 @@ namespace PRINCE2.Products
         public class OrganizationalStandards { }
 
         public class SupplierCustomerQualityManagementSystems { }
-
-        public class ChangeControlRequirements { }
 
         public class CorporateStrategies { }
     }
