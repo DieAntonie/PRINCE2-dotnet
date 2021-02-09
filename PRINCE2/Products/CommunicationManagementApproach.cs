@@ -1,16 +1,23 @@
 using System;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
 
     /**
+     * Purpose:
      * A communication management approach contains a description of the means and frequency of communication with parties both internal and external to the project.
      * It facilitates engagement with stakeholders through the establishment of a controlled and bidirectional flow of information.
      */
-    public class CommunicationManagementApproach : Approach
+    public partial class CommunicationManagementApproach
     {
 
         #region Composition
+
+            /**
+             * States the purpose, objectives and scope, and identifies who is responsible for the approach.
+             */
+            public Introduction introduction { get; set; }
 
             /**
              * Describes (or refers to) any communication methods to be used.
@@ -19,9 +26,29 @@ namespace PRINCE2.Products
             public CommunicationProcedure communicationProcedure { get; set; }
 
             /**
+             * Refers to any communication tools to be used, and any preference for techniques that may be used, for each step in the communication process.
+             */
+            public ToolsAndTechniques toolsAndTechniques { get; set; }
+
+            /**
+             * Defines what communication records will be required and where they will be stored (e.g. logging of external correspondence).
+             */
+            public Records records { get; set; }
+
+            /**
+             * Describes any reports on the communication process that are to be produced, including their purpose, timing and recipients (e.g. performance indicators).
+             */
+            public Reporting reporting { get; set; }
+
+            /**
              * States when formal communication activities are to be undertaken (e.g. at the end of a management stage), including performance audits of the communication methods.
              */
-            public CommunicationActivitiesTiming communicationActivitiesTiming { get; set; }
+            public TimingOfCommunicationActivities timingOfCommunicationActivities { get; set; }
+
+            /**
+             * Describes who will be responsible for what aspects of the communication process, including any corporate, programme management or customer roles involved with communication.
+             */
+            public RolesAndResponsibilities rolesAndResponsibilities { get; set; }
 
             /**
              * Consists of:
@@ -42,7 +69,7 @@ namespace PRINCE2.Products
              *  - Means of communication
              *  - Format of the communication
              */
-            public InformationNeedsForInterestedParty informationNeedsForInterestedParty { get; set; }
+            public InformationNeedsForEachInterestedParty informationNeedsForEachInterestedParty { get; set; }
 
         #endregion
 
@@ -52,9 +79,9 @@ namespace PRINCE2.Products
 
             public CommunicationManagementApproach(
                 CorporateCommunicationsPolicies corporateCommunicationsPolicies,
-                InformationManagementStrategy informationManagementStrategy,
+                ProgrammesInformationManagementStrategy programmesInformationManagementStrategy,
                 ProjectInitiationDocumentation projectInitiationDocumentation,
-                StakeholderFacilitatedWorkshopsInformalDiscussions stakeholderFacilitatedWorkshopsInformalDiscussions,
+                FacilitatedWorkshopsAndInformalDiscussions facilitatedWorkshopsAndInformalDiscussionsWithStakeholders,
                 StakeholderAnalysis stakeholderAnalysis
             ) => throw new NotImplementedException();
 
@@ -98,19 +125,5 @@ namespace PRINCE2.Products
             public bool AppropriatlyIncorporatesCorporateCommunicationsFacilities() => throw new NotImplementedException();
 
         #endregion
-
-        public class CommunicationProcedure { }
-
-        public class CommunicationActivitiesTiming : ActivitiesTiming { }
-
-        public class StakeholderAnalysis { }
-
-        public class InformationNeedsForInterestedParty { }
-
-        public class CorporateCommunicationsPolicies { }
-
-        public class InformationManagementStrategy { }
-
-        public class StakeholderFacilitatedWorkshopsInformalDiscussions { }
     }
 }

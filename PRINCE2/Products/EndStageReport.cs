@@ -21,7 +21,7 @@ namespace PRINCE2.Products
             /**
             * Summary of the current set of issues and risks affecting the project.
             */
-            public IssuesRisks issuesRisks { get; set; }
+            public IssuesAndRisks issuesAndRisks { get; set; }
 
             /**
             * The project manager’s forecast for the project and next management stage against planned targets and tolerances for time, cost, quality, scope, benefits and risk.

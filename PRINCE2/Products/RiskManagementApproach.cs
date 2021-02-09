@@ -1,6 +1,5 @@
 using System;
 using PRINCE2.UNSORTED;
-using static PRINCE2.Products.Approach;
 
 namespace PRINCE2.Products
 {
@@ -27,7 +26,7 @@ namespace PRINCE2.Products
             /*
              * Refers to any risk management systems or tools to be used, and any preference for techniques which may be used for each step in the risk management procedure.
              */
-            public ToolsTechniques toolsTechniques { get; set; }
+            public ToolsAndTechniques toolsTechniques { get; set; }
 
             /*
              * Defines the composition and format of the risk register and any other risk records to be used by the project.
@@ -42,12 +41,12 @@ namespace PRINCE2.Products
             /*
              * States when formal risk management activities are to be undertaken (e.g. at the end of management stages).
              */
-            public RiskManagementActivitiesTiming riskManagementActivitiesTiming { get; set; }
+            public TimingOfRiskManagementActivities timingOfRiskManagementActivities { get; set; }
 
             /*
              * Defines the roles and responsibilities for risk management activities.
              */
-            public RolesResponsibilities rolesResponsibilities { get; set; }
+            public RolesAndResponsibilities rolesAndResponsibilities { get; set; }
 
             /*
              * Defines the scales for estimating probability and impact for the project to ensure that the scales for cost and time (for instance) are relevant to the cost and timeframe of the project.
@@ -134,19 +133,5 @@ namespace PRINCE2.Products
             public bool RiskReportingRequirementsFullyDefined() => throw new NotImplementedException();
 
         #endregion
-
-        public class RiskManagementProcessProcedure { }
-
-        public class RiskManagementActivitiesTiming : ActivitiesTiming { }
-
-        public class Scales { }
-
-        public class RiskCategories { }
-
-        public class EarlyWarningIndicators { }
-
-        public class RiskTolerance { }
-
-        public class RiskBudget { }
     }
 }

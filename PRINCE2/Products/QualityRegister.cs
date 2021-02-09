@@ -38,7 +38,7 @@ namespace PRINCE2.Products
             /*
              * The person or team responsible for the quality management activities (e.g. auditor or, for quality reviews, presenter, reviewer(s), chair, administrator).
              */
-            public RolesResponsibilities rolesResponsibilities { get; set; }
+            public RolesAndResponsibilities rolesAndResponsibilities { get; set; }
 
             /*
              * Planned, forecast and actual dates for:

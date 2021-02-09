@@ -1,6 +1,3 @@
-using System;
-using PRINCE2.UNSORTED;
-
 namespace PRINCE2.Products
 {
     /**

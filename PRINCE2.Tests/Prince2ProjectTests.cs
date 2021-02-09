@@ -1,5 +1,6 @@
 using System;
 using PRINCE2.Products;
+using PRINCE2.UNSORTED;
 using Xunit;
 
 namespace PRINCE2.Tests

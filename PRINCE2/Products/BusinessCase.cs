@@ -1,5 +1,5 @@
 using System;
-using PRINCE2.Roles;
+using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
@@ -12,7 +12,7 @@ namespace PRINCE2.Products
      * The business case is used by the controlling a stage process when assessing impacts of issues and risks.
      * It is reviewed and updated at the end of each management stage by the managing a stage boundary process, and at the end of the project by the closing a project process.
      */
-    public class BusinessCase
+    public partial class BusinessCase
     {
         #region Composition
             /**
@@ -162,22 +162,5 @@ namespace PRINCE2.Products
 
         #endregion
 
-        public class ExecutiveSummary { }
-
-        public class Reasons { }
-
-        public class BusinessOptions { }
-
-        public class ExpectedBenefits { }
-
-        public class ExpectedDisbenefits { }
-
-        public class Timescale { }
-
-        public class Costs { }
-
-        public class InvestmentAppraisal { }
-
-        public class MajorRisks { }
     }
 }

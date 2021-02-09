@@ -8,9 +8,14 @@ namespace PRINCE2.Products
      * A quality management approach describes how quality will be managed on the project.
      * This includes the specific processes, procedures, techniques, standards and responsibilities to be applied.
      */
-    public partial class QualityManagementApproach : Approach
+    public partial class QualityManagementApproach
     {
         #region Composition
+
+            /**
+             * States the purpose, objectives and scope, and identifies who is responsible for the approach.
+             */
+            public Introduction introduction { get; set; }
 
             /**
              * A description of (or reference to) the quality management procedure to be used.
@@ -34,9 +39,29 @@ namespace PRINCE2.Products
             public QualityManagementProcessProcedure qualityManagementProcessProcedure { get; set; }
 
             /**
+             * Refers to any quality management systems or tools to be used, and any preference for techniques which may be used for each step in the quality management procedure.
+             */
+            public ToolsAndTechniques toolsAndTechniques { get; set; }
+
+            /**
+             * Definition of what quality records will be required and where they will be stored, including the composition and format of the quality register.
+             */
+            public Records records { get; set; }
+
+            /**
+             * Describes any quality management reports, including their purpose, timing and recipients.
+             */
+            public Reporting reporting { get; set; }
+
+            /**
              * States when formal quality management activities are to be undertaken (e.g. during audits, when this may involve reference to the quality register).
              */
-            public QualityManagementActivitiesTiming qualityManagementActivitiesTiming { get; set; }
+            public TimingOfQualityManagementActivities timingOfQualityManagementActivities { get; set; }
+
+            /**
+             * Defines the roles and responsibilities for quality management activities, including those with quality responsibilities from corporate, programme management or the customer.
+             */
+            public RolesAndResponsibilities rolesAndResponsibilities { get; set; }
 
         #endregion
 
@@ -47,10 +72,10 @@ namespace PRINCE2.Products
                 ProjectBoard projectBoard,
                 ProjectBrief projectBrief,
                 OrganizationalStandards organizationalStandards,
-                SupplierCustomerQualityManagementSystems supplierCustomerQualityManagementSystems,
+                SupplierAndCustomerQualityManagementSystems supplierAndCustomerQualityManagementSystems,
                 ChangeControlRequirements changeControlRequirements,
                 CorporateStrategies corporateStrategies,
-                FacilitatedWorkshopsInformalDiscussions facilitatedWorkshopsInformalDiscussions
+                FacilitatedWorkshopsAndInformalDiscussions facilitatedWorkshopsInformalDiscussions
             ) => throw new NotImplementedException();
 
         #endregion
@@ -87,16 +112,6 @@ namespace PRINCE2.Products
             public bool ApproachesToAssuringQualityForProjectAreAppropriateInLightOfStandardsSelected() => throw new NotImplementedException();
 
         #endregion
-        public class QualityManagementProcessProcedure { }
 
-        public class QualityManagementActivitiesTiming : ActivitiesTiming { }
-
-        public class ProjectBoard { }
-
-        public class OrganizationalStandards { }
-
-        public class SupplierCustomerQualityManagementSystems { }
-
-        public class CorporateStrategies { }
     }
 }

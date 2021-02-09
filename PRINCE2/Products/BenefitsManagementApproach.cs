@@ -9,44 +9,44 @@ namespace PRINCE2.Products
      * If the project is part of a programme, the benefits management approach may be contained within the programme benefits realization plan and executed at the programme level.
      * Post-project, the benefits management approach is maintained and executed by corporate, programme management or the customer.
      */
-    public class BenefitsManagementApproach
+    public partial class BenefitsManagementApproach
     {
         #region Composition
 
             /** 
             * The scope of the benefits management approach covering what benefits are to be managed and measured.
             */
-            public BenefitsScope benefitsScope { get; set; }
+            public Scope scope { get; set; }
 
             /** 
             * Who is accountable for the expected benefits.
             */
-            public BenefitsAccountability benefitsAccountability { get; set; }
+            public Accountability accountability { get; set; }
 
             /** 
             * What management actions are required in order to ensure that the project’s outcomes are achieved.
             */
-            public BenefitsManagementsActions benefitsManagementsActions { get; set; }
+            public ManagementActions managementActions { get; set; }
 
             /** 
             * How to measure achievement of expected benefits, and when they can be measured.
             */
-            public BenefitsMeasurementDetails benefitsMeasurementDetails { get; set; }
+            public MeasuringAchievement measuringAchievement { get; set; }
 
             /** 
             * What resources are needed.
             */
-            public BenefitsResources benefitsResources { get; set; }
+            public ResourceRequirements resourceRequirements { get; set; }
 
             /** 
             * Baseline measures from which the improvements will be calculated.
             */
-            public BenefitsBaselineMeasurements benefitsBaselineMeasurements { get; set; }
+            public BaselineMeasures baselineMeasures { get; set; }
 
             /** 
             * How the performance of the project’s product will be reviewed.
             */
-            public BenefitsReviews benefitsReviews { get; set; }
+            public ArrangementsForProjectProductPerformanceReview arrangementsForProjectProductPerformanceReview { get; set; }
 
         #endregion
 
@@ -96,19 +96,5 @@ namespace PRINCE2.Products
             public bool DisBenefitsConsidered() => throw new NotImplementedException();
 
         #endregion
-
-        public class BenefitsManagementsActions { }
-
-        public class BenefitsScope { }
-
-        public class BenefitsAccountability { }
-
-        public class BenefitsMeasurementDetails { }
-
-        public class BenefitsResources { }
-
-        public class BenefitsBaselineMeasurements { }
-
-        public class BenefitsReviews { }
     }
 }

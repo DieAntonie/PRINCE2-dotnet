@@ -57,7 +57,7 @@ namespace PRINCE2.Products
             /**
             * Summary of actual or potential problems and risks.
             */
-            public IssuesRisks issuesRisks { get; set; }
+            public IssuesAndRisks issuesAndRisks { get; set; }
 
             /**
             * A review of what went well, what went badly, and any recommendations for corporate, programme management or customer consideration.

@@ -1,4 +1,4 @@
-namespace PRINCE2.Products
+namespace PRINCE2.UNSORTED
 {
     public class ProjectMandate
     {
