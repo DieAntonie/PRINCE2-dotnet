@@ -22,7 +22,7 @@ namespace PRINCE2.Products
      *
      * A plan should cover not just the activities to create products but also the activities to manage product creation, including activities for assurance, quality management, risk management, change control, communication and any other project controls required.
      */
-    public partial class Plan
+    public class Plan
     {
         
         #region Composition

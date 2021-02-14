@@ -9,7 +9,7 @@ namespace PRINCE2.Products
      * A communication management approach contains a description of the means and frequency of communication with parties both internal and external to the project.
      * It facilitates engagement with stakeholders through the establishment of a controlled and bidirectional flow of information.
      */
-    public partial class CommunicationManagementApproach
+    public class CommunicationManagementApproach
     {
 
         #region Composition

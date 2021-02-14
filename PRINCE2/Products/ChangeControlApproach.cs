@@ -8,7 +8,7 @@ namespace PRINCE2.Products
      * A change control approach is used to identify, assess and control any potential and approved changes to the project baselines.
      * It describes the procedures, techniques and standards to be applied and the responsibilities for achieving an effective issue management and change control procedure.
      */
-    public partial class ChangeControlApproach
+    public class ChangeControlApproach
     {
 
         #region Composition

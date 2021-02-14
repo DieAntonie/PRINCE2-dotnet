@@ -8,7 +8,7 @@ namespace PRINCE2.Products
      * An end stage report is used to give a summary of progress to date, the overall project situation, and sufficient information to ask for a project board decision on what to do next with the project.
      * The project board uses the information in the end stage report in tandem with the next stage plan to decide what action to take with the project; for example, authorize the next stage, amend the project scope or stop the project.
      */
-    public partial class EndStageReport
+    public class EndStageReport
     {
 
         #region Composition

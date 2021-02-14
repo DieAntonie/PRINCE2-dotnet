@@ -102,7 +102,7 @@ namespace PRINCE2.Products
             /**
              * Any appointed project assurance roles should agree with the report.
              */
-            public virtual bool ProjectAssuranceAgree() => throw new NotImplementedException();
+            public bool ProjectAssuranceAgree() => throw new NotImplementedException();
 
         #endregion
     }

@@ -3,7 +3,7 @@ using PRINCE2.UNSORTED;
 
 namespace PRINCE2.Products
 {
-    public partial class RiskManagementApproach
+    public class RiskManagementApproach
     {
 
         #region Composition

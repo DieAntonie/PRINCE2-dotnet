@@ -8,7 +8,7 @@ namespace PRINCE2.Products
      * An exception report is produced when a stage plan or project plan is forecast to exceed tolerance levels set.
      * It is prepared by the project manager in order to inform the project board of the situation, and to offer options and recommendations for the way to proceed.
      */
-    public partial class ExceptionReport {
+    public class ExceptionReport {
 
         #region Composition
 

@@ -9,7 +9,7 @@ namespace PRINCE2.Products
      * If the project is part of a programme, the benefits management approach may be contained within the programme benefits realization plan and executed at the programme level.
      * Post-project, the benefits management approach is maintained and executed by corporate, programme management or the customer.
      */
-    public partial class BenefitsManagementApproach
+    public class BenefitsManagementApproach
     {
         #region Composition
 
