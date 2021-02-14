@@ -1,3 +1,6 @@
+using System;
+using PRINCE2.UNSORTED;
+
 namespace PRINCE2.Products
 {
     /**
@@ -10,5 +13,26 @@ namespace PRINCE2.Products
      * Often entries are based on thoughts, conversations and observations.
      * PRINCE2 does not define the composition, format and presentation or quality criteria for this product.
      */
-    public class DailyLog { }
+    public class DailyLog
+    {
+
+        #region Composition
+
+            public ProjectName projectName { get; set; } 
+
+            public DailyLogScope dailyLogScope { get; set; }
+
+            public DateTime dateOfEntry { get; set; }
+
+            public LogItem ProblemActionEventOrComment { get; set; }
+
+            public PersonResponsible personResponsible { get; set; }
+
+            public DateTime targetDate { get; set; }
+
+            public Result[] results { get; set; }
+
+        #endregion    
+
+    }
 }

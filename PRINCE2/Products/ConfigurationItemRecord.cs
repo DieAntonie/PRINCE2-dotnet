@@ -1,3 +1,6 @@
+using System;
+using PRINCE2.UNSORTED;
+
 namespace PRINCE2.Products
 {
     /**
@@ -12,5 +15,66 @@ namespace PRINCE2.Products
      * - The quality register, issue register and risk register.
      * PRINCE2 does not define the composition, format and presentation or quality criteria for this product.
      */
-    public class ConfigurationItemRecord { }
+    public class ConfigurationItemRecord {
+
+        #region Composition
+            
+            public ProjectIdentifier projectIdentifier { get; set; }
+            
+            public ItemIdentifier itemIdentifier { get; set; }
+            
+            public CurrentVersion currentVersion { get; set; }
+            
+            public Title itemTitle { get; set; }
+            
+            public DateTime dateOfLastStatusChange { get; set; }
+            
+            public Owner owner { get; set; }
+
+            public Location location { get; set; }
+
+            public CopyHolder[] copyHolders { get; set; }
+
+            public ItemType itemType { get; set; }
+
+            public ItemAttribute[] itemAttributes { get; set; }
+
+            public Stage stage { get; set; }
+
+            public User[] users { get; set; }
+
+            public Status status { get; set; }
+
+            public ProductState productState { get; set; }
+
+            public Variant variant { get; set; }
+
+            public Producer producer { get; set; }
+
+            public DateTime dateAllocatedToTheProducer { get; set; }
+
+            public Source source { get; set; }
+
+            public RelationshipWithOtherItems relationshipWithOtherItems { get; set; }
+
+            public CrossReferences crossReferences { get; set; }
+
+        #endregion
+
+        #region Derivation
+
+            public ConfigurationItemRecord() { }
+
+            public ConfigurationItemRecord(
+                ChangeControlApproach changeControlApproach,
+                ProductBreakdownStructure productBreakdownStructure,
+                StagePlan stagePlan,
+                WorkPackage workPackage,
+                IssueRegister issueRegister,
+                QualityRegister qualityRegister,
+                RiskRegister riskRegister
+            ) => throw new NotImplementedException();
+
+        #endregion
+    }
 }

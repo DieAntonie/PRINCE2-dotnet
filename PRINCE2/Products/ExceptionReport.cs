@@ -8,9 +8,10 @@ namespace PRINCE2.Products
      * An exception report is produced when a stage plan or project plan is forecast to exceed tolerance levels set.
      * It is prepared by the project manager in order to inform the project board of the situation, and to offer options and recommendations for the way to proceed.
      */
-    public class ExceptionReport {
+    public partial class ExceptionReport {
 
         #region Composition
+
             /**
             * An overview of the exception being reported.
             */
@@ -19,14 +20,14 @@ namespace PRINCE2.Products
             /**
             * A description of the cause of a deviation from the current plan.
             */
-            public ExceptionCause exceptionCause { get; set; }
+            public CauseOfTheException causeOfTheException { get; set; }
 
             /**
             * What the implications are if the deviation is not addressed for:
             * - the project.
             * - corporate, programme management or the customer.
             */
-            public DeviationConsequences deviationConsequences { get; set; }
+            public ConsequencesOfTheDeviation consequencesOfTheDeviation { get; set; }
 
             /**
             * What options are available to address the deviation and the effect of each option on the business case, risks and tolerances.
@@ -90,16 +91,5 @@ namespace PRINCE2.Products
             public bool ExceptionReportGivenTimelyAppropriate() => throw new NotImplementedException();
 
         #endregion
-
-        public class ExceptionTitle { }
-
-        public class ExceptionCause { }
-
-        public class DeviationConsequences { }
-
-        public class Options { }
-
-        public class Recommendation { }
-
     }
 }
